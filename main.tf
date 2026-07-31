@@ -44,8 +44,8 @@ resource "aws_lb_listener" "front_end" {
     target_group_arn = aws_lb_target_group.tg.arn
   }
   lifecycle {
-    ignore_changes = [ 
+    ignore_changes = [
       default_action
-     ]
+    ]
   }
 }
