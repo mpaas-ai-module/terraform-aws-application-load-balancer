@@ -66,6 +66,7 @@ variable "target_type" {
 variable "target_id" {
   description = "The ID of the target to register with the target group (e.g., instance ID or IP address)"
   type        = string
+  default     = ""
 }
 
 variable "listener_port" {
